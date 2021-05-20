@@ -24,7 +24,7 @@ jobs:
         run: sudo apt-get install -y chromium-browser=1:85.0.4183.83-0ubuntu0.20.04.2
         
       - name: test install driver1
-        run: wget -N http://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_linux64.zip
+        run: wget -N http://chromedriver.storage.googleapis.com/85.0.4183.83/chromedriver_linux64.zip
       
       - name: test install driver2
         run: unzip chromedriver_linux64.zip
