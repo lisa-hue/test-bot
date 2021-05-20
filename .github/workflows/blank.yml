@@ -21,7 +21,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: test install chrome
-        run: sudo apt-get install -y chromium-browser=90.0.4430.212
+        run: sudo apt-get install -y chromium-browser
         
         
       - name: test install driver1
