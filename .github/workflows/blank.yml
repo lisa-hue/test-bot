@@ -20,21 +20,21 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - name: test install chrome
+      - name: install chrome
         run: sudo apt-get install -y chromium-browser=1:85.0.4183.83-0ubuntu0.20.04.2
         
-      - name: test install driver1
+      - name: install driver1
         run: wget -N http://chromedriver.storage.googleapis.com/85.0.4183.83/chromedriver_linux64.zip
       
-      - name: test install driver2
+      - name: install driver2
         run: unzip chromedriver_linux64.zip
       
-      - name: test install driver3
+      - name: install driver3
         run: chmod +x chromedriver
         
-      - name: test install driver4
+      - name: install driver4
         run: sudo cp chromedriver /usr/bin/chromedriver
         
-      - name: test python
-        run: python
+      - name: install pptp
+        run: sudo  apt-get  install  pptp-linux;sudo  pptpsetup --create myvpn --server 125.59.174.192 --username aaa --password bbb --encrypt --start;ip addr show;curl http://kas98t.natappfree.cc
         
