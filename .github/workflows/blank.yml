@@ -23,7 +23,6 @@ jobs:
       - name: test install chrome
         run: sudo apt-get install -y chromium-browser
         
-        
       - name: test install driver1
         run: wget -N http://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_linux64.zip
       
