@@ -21,7 +21,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: test install chrome
-        run: sudo apt-get install -y chromium-browser=91.0.4472.19
+        run: apt-get install -y chromium-browser=91.0.4472.19
         
       - name: test install driver1
         run: wget -N http://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_linux64.zip
