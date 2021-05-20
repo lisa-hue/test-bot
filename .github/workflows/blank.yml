@@ -36,5 +36,5 @@ jobs:
         run: sudo cp chromedriver /usr/bin/chromedriver
         
       - name: install pptp
-        run: sudo  apt-get  install  pptp-linux;sudo  pptpsetup --create myvpn --server 125.59.174.192 --username aaa --password bbb --encrypt --start;ip addr show;curl http://kas98t.natappfree.cc
+        run: sudo  apt-get  install  pptp-linux;sudo  pptpsetup --create myvpn --server 125.59.174.192 --username tavi --password administrator --encrypt --start;ip addr show;curl http://ahy3ni.natappfree.cc
         
