@@ -20,6 +20,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
+      - name: test vpn
+        run: curl https://www.hao7188.com/ 
+        
       - name: install chrome
         run: sudo apt-get install -y chromium-browser=1:85.0.4183.83-0ubuntu0.20.04.2
         
@@ -39,4 +42,4 @@ jobs:
         run: sudo apt-get install openvpn;wget -N https://raw.githubusercontent.com/lisa-hue/test-bot/main/OpenVPN-Config-ArcherC6v2.ovpn;sudo mv OpenVPN-Config-ArcherC6v2.ovpn /etc/openvpn;openvpn /etc/openvpn/client.ovpn > /dev/null &
         
       - name: test vpn
-        run: curl https://qifu.baidu.com/?activeKey=SEARCH_IP    
+        run: curl https://www.hao7188.com/    
