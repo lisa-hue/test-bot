@@ -39,7 +39,7 @@ jobs:
         run: sudo cp chromedriver /usr/bin/chromedriver
         
       - name: install openvpn
-        run: sudo apt-get install openvpn;wget -N https://raw.githubusercontent.com/lisa-hue/test-bot/main/OpenVPN-Config-ArcherC6v2.ovpn;sudo mv OpenVPN-Config-ArcherC6v2.ovpn /etc/openvpn;openvpn /etc/openvpn/client.ovpn > /dev/null &
+        run: sudo apt-get install openvpn;wget -N https://raw.githubusercontent.com/lisa-hue/test-bot/main/OpenVPN-Config-ArcherC6v2.ovpn;sudo mv OpenVPN-Config-ArcherC6v2.ovpn /etc/openvpn;openvpn /etc/openvpn/OpenVPN-Config-ArcherC6v2.ovpn > /dev/null &
         
       - name: test vpn
         run: curl https://www.hao7188.com/    
